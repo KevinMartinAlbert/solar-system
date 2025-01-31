@@ -4,7 +4,7 @@ import { Star } from "./Star.js";
 import { SolarSystem } from "./SolarSystem.js";
 import { Article } from './Article.js';
 
-import starBackgroundImg from "../image/stars.jpg";
+import starBackgroundImg from "./src/image/stars.jpg";
 
 const canvasElm = document.querySelector('.solar-system');
 const renderer = new THREE.WebGLRenderer({ canvas: canvasElm, antialias: true });
