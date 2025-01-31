@@ -1,5 +1,5 @@
 import * as THREE from 'https://cdn.jsdelivr.net/npm/three@0.155/build/three.module.min.js';
-import { OrbitControls } from 'https://cdn.jsdelivr.net/npm/three/examples/js/controls/OrbitControls.js';
+import { OrbitControls } from './solar-system/src/scripts/OrbitControls.js';
 import { Star } from "/solar-system/src/scripts/Star.js";
 import { SolarSystem } from "/solar-system/src/scripts/SolarSystem.js";
 import { Article } from '/solar-system/src/scripts/Article.js';
@@ -16,7 +16,7 @@ const camera = new THREE.PerspectiveCamera(
     1000000
 );
 
-let orbit = new THREE.OrbitControls(camera, canvasElm);
+let orbit = new OrbitControls(camera, canvasElm);
 
 camera.position.set(60, 80, 140);
 orbit.update();
