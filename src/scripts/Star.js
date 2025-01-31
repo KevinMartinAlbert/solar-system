@@ -1,5 +1,5 @@
 // import * as THREE from "three";
-import * as THREE from 'https://cdn.jsdelivr.net/npm/three@0.155/build/three.module.min.js';
+import * as THREE from 'https://unpkg.com/three@0.148.0/build/three.module.js'
 
 class Star {
     constructor(type, name, radius, description, image, rotationAxis, rotationSpeed, orbitingCenter, orbitingSpeed, distanceFromOrbitingCenter, hasRings, rings, innerRadius, outerRadius, ringTexture, hasMoon, moon, moonRadius, moonTexture, moonDistanceFromOrbitingCenter, moonName, mesh, followCamera) {
