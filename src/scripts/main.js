@@ -4,8 +4,6 @@ import { Star } from "/solar-system/src/scripts/Star.js";
 import { SolarSystem } from "/solar-system/src/scripts/SolarSystem.js";
 import { Article } from '/solar-system/src/scripts/Article.js';
 
-import starBackgroundImg from "/solar-system/src/image/stars.jpg";
-
 const canvasElm = document.querySelector('.solar-system');
 const renderer = new THREE.WebGLRenderer({ canvas: canvasElm, antialias: true });
 renderer.setSize(canvasElm.clientWidth, canvasElm.clientHeight);
@@ -25,12 +23,12 @@ orbit.update();
 
 const cubeTextureLoader = new THREE.CubeTextureLoader();
 scene.background = cubeTextureLoader.load([
-    starBackgroundImg,
-    starBackgroundImg,
-    starBackgroundImg,
-    starBackgroundImg,
-    starBackgroundImg,
-    starBackgroundImg
+    "/solar-system/src/image/stars.jpg",
+    "/solar-system/src/image/stars.jpg",
+    "/solar-system/src/image/stars.jpg",
+    "/solar-system/src/image/stars.jpg",
+    "/solar-system/src/image/stars.jpg",
+    "/solar-system/src/image/stars.jpg"
 ]);
 
 const solarSystem = new SolarSystem(scene);
@@ -126,9 +124,6 @@ toggleAnimationButton.addEventListener('click', () => {
     params.isAnimationRunning = !params.isAnimationRunning;
     toggleAnimationButton.textContent = params.isAnimationRunning ? 'Pause' : 'Resume';
 });
-
-// const ambientLight = new THREE.AmbientLight(0x565656, 1000);
-// scene.add(ambientLight);
 
 function animate(currentTime) {
     if (params.isAnimationRunning) {
