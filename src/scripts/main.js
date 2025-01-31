@@ -25,12 +25,12 @@ orbit.update();
 
 const cubeTextureLoader = new THREE.CubeTextureLoader();
 scene.background = cubeTextureLoader.load([
-    "/src/image/stars.jpg",
-    "/src/image/stars.jpg",
-    "/src/image/stars.jpg",
-    "/src/image/stars.jpg",
-    "/src/image/stars.jpg",
-    "/src/image/stars.jpg"
+    "/solar-system/src/image/stars.jpg",
+    "/solar-system/src/image/stars.jpg",
+    "/solar-system/src/image/stars.jpg",
+    "/solar-system/src/image/stars.jpg",
+    "/solar-system/src/image/stars.jpg",
+    "/solar-system/src/image/stars.jpg"
 ]);
 
 
