@@ -1,10 +1,10 @@
 import * as THREE from 'https://cdn.jsdelivr.net/npm/three@0.155/build/three.module.min.js';
 import { OrbitControls } from 'https://cdn.jsdelivr.net/npm/three-orbitcontrols@2.110.3/OrbitControls.min.js';
-import { Star } from "./Star.js";
-import { SolarSystem } from "./SolarSystem.js";
-import { Article } from './Article.js';
+import { Star } from "/solar-system/Star.js";
+import { SolarSystem } from "/solar-system/SolarSystem.js";
+import { Article } from '/solar-system/Article.js';
 
-import starBackgroundImg from "./src/image/stars.jpg";
+import starBackgroundImg from "/solar-system/src/image/stars.jpg";
 
 const canvasElm = document.querySelector('.solar-system');
 const renderer = new THREE.WebGLRenderer({ canvas: canvasElm, antialias: true });
