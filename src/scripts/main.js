@@ -1,5 +1,7 @@
-import * as THREE from 'three';
-import { OrbitControls } from 'three/examples/jsm/controls/OrbitControls.js';
+// import * as THREE from 'three';
+import * as THREE from 'https://unpkg.com/three@0.148.0/build/three.module.js'
+// import { OrbitControls } from 'three/examples/jsm/controls/OrbitControls.js';
+import {OrbitControls} from 'https://unpkg.com/three@0.126.1/examples/jsm/controls/OrbitControls.js'
 import { Star } from "/src/scripts/Star.js";
 import { SolarSystem } from "/src/scripts/SolarSystem.js";
 import { Article } from '/src/scripts/Article.js';
