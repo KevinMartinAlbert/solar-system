@@ -1,8 +1,8 @@
-import * as THREE from "https://unpkg.com/three@0.155/build/three.module.js";
-import { OrbitControls } from "https://unpkg.com/three@0.155/examples/jsm/controls/OrbitControls.js";
-import { Star } from "./solar-system/Star.js";
-import { SolarSystem } from "./solar-system/SolarSystem.js";
-import { Article } from './solar-system/Article.js';
+import * as THREE from 'https://cdn.jsdelivr.net/npm/three@0.155/build/three.module.min.js';
+import { OrbitControls } from 'https://cdn.jsdelivr.net/npm/three-orbitcontrols@2.110.3/OrbitControls.min.js';
+import { Star } from "/solar-system/Star.js";
+import { SolarSystem } from "/solar-system/SolarSystem.js";
+import { Article } from '/solar-system/Article.js';
 
 import starBackgroundImg from "/solar-system/src/image/stars.jpg";
 
