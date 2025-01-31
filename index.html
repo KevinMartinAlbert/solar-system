@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Solar System</title>
+    <link rel="stylesheet" href="src/styles/reset.css">
+    <link rel="stylesheet" href="src/styles/main.css">
+</head>
+<body>
+    <div class="container">
+        <div class="infos">
+            <header class="header">
+                <button id="follow_cam_Mercury" class="follow_cam">Mercury</button>
+                <button id="follow_cam_Venus" class="follow_cam">Venus</button>
+                <button id="follow_cam_Earth" class="follow_cam">Earth</button>
+                <button id="follow_cam_Mars" class="follow_cam">Mars</button>
+                <button id="follow_cam_Jupiter" class="follow_cam">Jupiter</button>
+                <button id="follow_cam_Saturn" class="follow_cam">Saturn</button>
+                <button id="follow_cam_Uranus" class="follow_cam">Uranus</button>
+                <button id="follow_cam_Neptune" class="follow_cam">Neptune</button>
+                <button id="follow_cam_Pluto" class="follow_cam">Pluto</button>
+                <button id="follow_cam_Sun" class="follow_cam">Sun</button>
+                <button id="initial_cam" class="follow_cam">Default view</button>
+                <button id="toggle-animation" class="pause">Pause</button>
+            </header>
+            <main class="main" id="main">
+                <p>Welcome to the solar system</p>
+            </main>
+            <footer class="footer">
+                <span>January 2025</span>
+            </footer>
+        </div>
+        <div class="solar-system-div">
+            <canvas class="solar-system"></canvas>
+        </div>
+    </div>
+    <script src="src/scripts/main.js" type="module"></script>
+</body>
+</html>

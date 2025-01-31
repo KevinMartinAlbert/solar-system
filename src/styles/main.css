@@ -1,0 +1,84 @@
+:root {
+    font-family: Arial, Helvetica, sans-serif;
+    --padding: 1rem;
+    --alphablack: rgba(0, 0, 0, 0.3);
+    --alphawhite: rgba(255, 255, 255, 0.05);
+    --black: #000000;
+    --border: 1px orange solid;
+    --margin: 1rem;
+    scrollbar-width: none;
+}
+
+.container {
+    display: grid;
+    grid-template-columns: 1fr;
+    height: 100vh;
+    position: relative;
+}
+
+.infos {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100vh;
+    width: 30%;
+    overflow: auto;
+    position: absolute;
+}
+
+.solar-system-div {
+    height: 100vh;
+    width: 100%;
+    overflow: hidden;
+}
+
+.solar-system {
+    height: 100%;
+    width: 100%;
+}
+
+.header {
+    text-shadow: yellow 0px 0 9px;;
+}
+
+.header, .footer, .main {
+    display: grid;
+    grid-template-columns: 1fr;
+    color: #DDD;
+    padding: var(--padding);
+    border: var(--border);
+    margin: var(--margin);
+    background-color: var(--alphawhite);
+    box-shadow: 0px 2px var(--alphablack);
+    backdrop-filter: blur(1px);
+}
+
+.header {
+    grid-template-columns: repeat(5, 1fr);
+}
+
+.main p {
+    margin-bottom: 1rem;
+}
+
+.follow_cam, .pause {
+    padding: 10px;
+    font-size: 14px;
+    cursor: pointer;
+}
+
+.follow_cam:hover, .pause:hover {
+    cursor: pointer;
+    text-decoration: underline;
+}
+
+
+.main {
+    margin-top: 0;
+    margin-bottom: 0;
+    flex-grow: 1;
+}
+
+.footer {
+    margin-bottom: var(--margin);
+}
