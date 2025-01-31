@@ -36,7 +36,7 @@ scene.background = cubeTextureLoader.load([
 
 const solarSystem = new SolarSystem(scene);
 
-fetch('/data/solar_system.json')
+fetch('/solar-system/public/data/solar_system.json')
     .then(response => {
         if (!response.ok) {
             throw new Error(`HTTP error! status: ${response.status}`);
