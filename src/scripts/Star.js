@@ -1,4 +1,4 @@
-import * as THREE from 'https://cdn.jsdelivr.net/npm/three@0.155/build/three.module.min.js';
+import * as THREE from "three";
 
 class Star {
     constructor(type, name, radius, description, image, rotationAxis, rotationSpeed, orbitingCenter, orbitingSpeed, distanceFromOrbitingCenter, hasRings, rings, innerRadius, outerRadius, ringTexture, hasMoon, moon, moonRadius, moonTexture, moonDistanceFromOrbitingCenter, moonName, mesh, followCamera) {
@@ -23,7 +23,7 @@ class Star {
         this.moonTexture = moonTexture; // texture of the moon
         this.moonDistanceFromOrbitingCenter = moonDistanceFromOrbitingCenter;
         this.moonName = moonName; // name of the moon
-        this.mesh = null; // a sphere mesh
+        this.mesh = null; // a sphere mesh for the planet
         this.followCamera = null // a camera that follows the planet
     };
 

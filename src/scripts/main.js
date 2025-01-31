@@ -1,7 +1,10 @@
-import * as THREE from 'https://cdn.jsdelivr.net/npm/three@0.155/build/three.module.min.js';
-import { Star } from "/solar-system/src/scripts/Star.js";
-import { SolarSystem } from "/solar-system/src/scripts/SolarSystem.js";
-import { Article } from '/solar-system/src/scripts/Article.js';
+import * as THREE from 'three';
+import { OrbitControls } from 'three/examples/jsm/controls/OrbitControls.js';
+import { Star } from "./Star.js";
+import { SolarSystem } from "./SolarSystem.js";
+import { Article } from './Article.js';
+
+import starBackgroundImg from "../image/stars.jpg";
 
 const canvasElm = document.querySelector('.solar-system');
 const renderer = new THREE.WebGLRenderer({ canvas: canvasElm, antialias: true });
@@ -15,19 +18,19 @@ const camera = new THREE.PerspectiveCamera(
     1000000
 );
 
-let orbit = new THREE.OrbitControls(camera, canvasElm);
+let orbit = new OrbitControls(camera, canvasElm);
 
 camera.position.set(60, 80, 140);
 orbit.update();
 
 const cubeTextureLoader = new THREE.CubeTextureLoader();
 scene.background = cubeTextureLoader.load([
-    "/solar-system/src/image/stars.jpg",
-    "/solar-system/src/image/stars.jpg",
-    "/solar-system/src/image/stars.jpg",
-    "/solar-system/src/image/stars.jpg",
-    "/solar-system/src/image/stars.jpg",
-    "/solar-system/src/image/stars.jpg"
+    starBackgroundImg,
+    starBackgroundImg,
+    starBackgroundImg,
+    starBackgroundImg,
+    starBackgroundImg,
+    starBackgroundImg
 ]);
 
 const solarSystem = new SolarSystem(scene);
@@ -123,6 +126,9 @@ toggleAnimationButton.addEventListener('click', () => {
     params.isAnimationRunning = !params.isAnimationRunning;
     toggleAnimationButton.textContent = params.isAnimationRunning ? 'Pause' : 'Resume';
 });
+
+// const ambientLight = new THREE.AmbientLight(0x565656, 1000);
+// scene.add(ambientLight);
 
 function animate(currentTime) {
     if (params.isAnimationRunning) {
