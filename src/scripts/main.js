@@ -1,5 +1,5 @@
 import * as THREE from 'https://cdn.jsdelivr.net/npm/three@0.155/build/three.module.min.js';
-import { OrbitControls } from './solar-system/src/scripts/OrbitControls.js';
+import { OrbitControls } from '/solar-system/src/scripts/OrbitControls.js';
 import { Star } from "/solar-system/src/scripts/Star.js";
 import { SolarSystem } from "/solar-system/src/scripts/SolarSystem.js";
 import { Article } from '/solar-system/src/scripts/Article.js';
