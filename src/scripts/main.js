@@ -16,7 +16,7 @@ const camera = new THREE.PerspectiveCamera(
     1000000
 );
 
-let orbit = new THREE.OrbitControls(camera, renderer.canvasElm);
+let orbit = new THREE.OrbitControls(camera, canvasElm);
 
 camera.position.set(60, 80, 140);
 orbit.update();
