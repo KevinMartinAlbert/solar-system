@@ -2,9 +2,9 @@
 import * as THREE from 'https://unpkg.com/three@0.148.0/build/three.module.js'
 // import { OrbitControls } from 'three/examples/jsm/controls/OrbitControls.js';
 import {OrbitControls} from 'https://unpkg.com/three@0.126.1/examples/jsm/controls/OrbitControls.js'
-import { Star } from "/src/scripts/Star.js";
-import { SolarSystem } from "/src/scripts/SolarSystem.js";
-import { Article } from '/src/scripts/Article.js';
+import { Star } from "/solar-system/src/scripts/Star.js";
+import { SolarSystem } from "/solar-system/src/scripts/SolarSystem.js";
+import { Article } from "/solar-system/src/scripts/Article.js";
 
 const canvasElm = document.querySelector('.solar-system');
 const renderer = new THREE.WebGLRenderer({ canvas: canvasElm, antialias: true });
