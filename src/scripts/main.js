@@ -1,8 +1,8 @@
 import * as THREE from 'three';
 import { OrbitControls } from 'three/examples/jsm/controls/OrbitControls.js';
-import { Star } from "./Star.js";
-import { SolarSystem } from "./SolarSystem.js";
-import { Article } from './Article.js';
+import { Star } from "/src/scripts/Star.js";
+import { SolarSystem } from "/src/scripts/SolarSystem.js";
+import { Article } from '/src/scripts/Article.js';
 
 const canvasElm = document.querySelector('.solar-system');
 const renderer = new THREE.WebGLRenderer({ canvas: canvasElm, antialias: true });
