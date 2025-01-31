@@ -23,7 +23,7 @@ class Star {
         this.moonTexture = moonTexture; // texture of the moon
         this.moonDistanceFromOrbitingCenter = moonDistanceFromOrbitingCenter;
         this.moonName = moonName; // name of the moon
-        this.mesh = null; // a sphere mesh
+        this.mesh = null; // a sphere mesh for the planet
         this.followCamera = null // a camera that follows the planet
     };
 
